@@ -1,0 +1,80 @@
+def proxy_view(url, requests_args=None, *args, **kwargs):
+    try:
+        requests_args = requests_args or {}
+        params = request.args.to_dict()
+
+        # Prepare headers from incoming request, excluding content-length
+        headers = {key: value for key, value in request.headers.items() if key.lower() not in ['content-length']}
+        requests_args['headers'] = headers
+        requests_args['params'] = params
+
+        # Print cache key information
+        cache_key = (request.method, url)
+        print(f"Cache key: {cache_key}")
+
+        # Retrieve from cache
+        cached_response = CachedResponse.query.filter_by(method=request.method, url=url).first()
+
+        if cached_response and (datetime.utcnow() - cached_response.timestamp).total_seconds() < CACHE_EXPIRATION_TIME:
+            print("Cached response found, checking validity")
+            if cached_response.last_modified:
+                requests_args['headers']['If-Modified-Since'] = cached_response.last_modified
+
+            # Conditional GET request
+            response = requests.request(request.method, url, **requests_args)
+
+            if response.status_code == 304:
+                print("Content not modified, returning cached response")
+                return Response(cached_response.content, status=200, mimetype=cached_response.content_type)
+            else:
+                print("Content modified, updating cache")
+                cached_response.content = response.content
+                cached_response.timestamp = datetime.utcnow()
+                cached_response.last_modified = response.headers.get('Last-Modified', '')
+                db.session.commit()
+        else:
+            print("No valid cached response, fetching URL from the internet")
+            response = requests.request(request.method, url, **requests_args)
+
+            # Create new cache entry or update existing
+            if not cached_response:
+                print("Creating new cache entry")
+                cached_response = CachedResponse(method=request.method, url=url)
+                db.session.add(cached_response)
+            cached_response.content = response.content
+            cached_response.timestamp = datetime.utcnow()
+            cached_response.last_modified = response.headers.get('Last-Modified', '')
+            cached_response.content_type = response.headers.get('Content-Type', '')
+            db.session.commit()
+
+        # Prepare proxy response
+        proxy_response = Response(response.content, status=response.status_code, mimetype=response.headers.get('Content-Type', ''))
+
+        # Set additional proxy response headers
+        excluded_headers = {'connection', 'keep-alive', 'proxy-authenticate', 'proxy-authorization', 'te', 'trailers', 'transfer-encoding', 'upgrade', 'content-encoding', 'content-length'}
+        for key, value in response.headers.items():
+            if key.lower() not in excluded_headers:
+                proxy_response.headers[key] = value
+
+        uri = urlparse(url)
+        hostname = socket.gethostname()
+        proxy_response.headers["Via"] = f"Proxy Server; host={hostname}; proto={uri.scheme}"
+        proxy_response.headers["Forwarded"] = f"for={request.remote_addr}; host={hostname}; proto={uri.scheme}"
+
+        print("Response prepared and sent to the client")
+        return proxy_response
+
+    except requests.RequestException as e:
+        print(f"Error occurred during request: {e}")
+        return Response(f"Error occurred: {e}", status=500)
+it's important to note that not all webpages or servers support the "If-Modified-Since" header, and some webpages may frequently update, making them less suitable for testing this feature.
+
+Understanding "If-Modified-Since" in Context
+Purpose of "If-Modified-Since": This HTTP header is used to request a resource only if it has been modified after a specified date. It helps to reduce unnecessary network traffic and server load by fetching resources only when they have changed.
+
+Limitations in Testing:
+
+Unsupported by Some Webpages: Not all web servers or webpages implement the "If-Modified-Since" header. Consequently, when you try to use this header with such resources, the server might not respond as expected. This makes testing challenging because you cannot reliably predict whether the server will honor the header.
+Frequent Modifications: Some webpages are updated very frequently. When testing with such pages, you might consistently receive updated content instead of a '304 Not Modified' response, as the content often changes between your requests.  
+ 
+so we decided to implement this function here but for testing i decided to keep if modified here 

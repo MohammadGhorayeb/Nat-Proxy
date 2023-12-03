@@ -1,0 +1,187 @@
+hello world
+@current working mac address lenovo ideapad: 89:24:92:48:23:8f
+you are now protected from DDOS attacks thanks to python3 flask limiter tool
+local IP Address: 192.168.0.7
+creating database sqllite
+training the X-
+training the Y-
+fiting the data
+Cache Expiration Model Coefficients: [-0.00079229]
+Cache Expiration Model Intercept: 1449.9029627729346
+Predictions on Training Data:
+Actual: 1310, Predicted: 1082.5306565008398
+Actual: 1042, Predicted: 1183.9422374115702
+Actual: 534, Predicted: 1331.3254670827669
+Actual: 349, Predicted: 1287.0004518696226
+Actual: 1345, Predicted: 1236.213493173177
+Actual: 1202, Predicted: 1135.947223448451
+Actual: 1929, Predicted: 1441.9302626374101
+Actual: 1307, Predicted: 1248.0511662093666
+Actual: 1810, Predicted: 1305.347226306651
+Actual: 1712, Predicted: 1287.7118153601434
+hello world
+@current working mac address lenovo ideapad: 89:24:92:48:23:8f
+you are now protected from DDOS attacks thanks to python3 flask limiter tool
+local IP Address: 192.168.0.7
+creating database sqllite
+training the X-
+training the Y-
+fiting the data
+Cache Expiration Model Coefficients: [0.00242971]
+Cache Expiration Model Intercept: 466.6905628327778
+Predictions on Training Data:
+Actual: 833, Predicted: 1222.3292382118475
+Actual: 1626, Predicted: 1362.1879686986701
+Actual: 1367, Predicted: 1218.6029854211613
+Actual: 1909, Predicted: 1500.5316175349976
+Actual: 1674, Predicted: 1503.9897420659927
+Actual: 227, Predicted: 735.9674494531532
+Actual: 413, Predicted: 1227.6226060541976
+Actual: 1522, Predicted: 633.8808959161797
+Actual: 774, Predicted: 755.4894241050313
+Actual: 549, Predicted: 733.3980725387705
+Welcome email sent successfully!
+No cached response found
+Fetching URL from the internet
+No cached response found
+Fetching URL from the internet
+No cached response found
+Fetching URL from the internet
+Response received from the internet at 2023-11-28 20:48:58.534625
+Creating the cache
+New response cached and saved well in the database
+Response sent to the client
+Response received from the internet at 2023-11-28 20:48:59.302413
+Creating the cache
+New response cached and saved well in the database
+Response sent to the client
+Checking if modified since and the expiration of the cache
+Returning cached response correctly
+Response received from the internet at 2023-11-28 20:49:36.816902
+Creating the cache
+New response cached and saved well in the database
+Response sent to the client
+No cached response found
+Fetching URL from the internet
+Response received from the internet at 2023-11-28 20:49:49.405341
+Creating the cache
+New response cached and saved well in the database
+Response sent to the client
+Checking if modified since and the expiration of the cache
+Returning cached response correctly
+Welcome email sent successfully!
+hello world
+@current working mac address lenovo ideapad: 89:24:92:48:23:8f
+you are now protected from DDOS attacks thanks to python3 flask limiter tool
+local IP Address: 192.168.0.7
+creating database sqllite
+training the X-
+training the Y-
+fiting the data
+Cache Expiration Model Coefficients: [4.62270163e-05]
+Cache Expiration Model Intercept: 1205.0987173669394
+Predictions on Training Data:
+Actual: 1266, Predicted: 1208.3437760225056
+Actual: 1721, Predicted: 1205.917928108139
+Actual: 892, Predicted: 1224.7490650560355
+Actual: 492, Predicted: 1218.1782584856508
+Actual: 722, Predicted: 1218.613952605235
+Actual: 1348, Predicted: 1220.0869015225012
+Actual: 1997, Predicted: 1220.7761720027574
+Actual: 1769, Predicted: 1222.269657510556
+Actual: 624, Predicted: 1210.3276872518609
+Actual: 1338, Predicted: 1219.736601434759
+hello world
+@current working mac address lenovo ideapad: 89:24:92:48:23:8f
+you are now protected from DDOS attacks thanks to python3 flask limiter tool
+local IP Address: 192.168.0.7
+creating database sqllite
+training the X-
+training the Y-
+fiting the data
+Cache Expiration Model Coefficients: [-0.00212612]
+Cache Expiration Model Intercept: 2049.5900646654736
+Predictions on Training Data:
+Actual: 1793, Predicted: 1454.720293904204
+Actual: 1557, Predicted: 1672.0111090769765
+Actual: 930, Predicted: 1202.0265667143558
+Actual: 1296, Predicted: 1202.3259297341194
+Actual: 1737, Predicted: 1724.870741454277
+Actual: 786, Predicted: 1341.9630828021513
+Actual: 1380, Predicted: 1051.005486391247
+Actual: 1663, Predicted: 1511.3539338220223
+Actual: 1594, Predicted: 1455.4630730092895
+Actual: 1018, Predicted: 1138.2597830913594
+Welcome email sent successfully!
+hello world
+@current working mac address lenovo ideapad: 89:24:92:48:23:8f
+you are now protected from DDOS attacks thanks to python3 flask limiter tool
+local IP Address: 192.168.0.7
+creating database sqllite
+training the X-
+training the Y-
+fiting the data
+Cache Expiration Model Coefficients: [0.00131854]
+Cache Expiration Model Intercept: 539.5134265492268
+Predictions on Training Data:
+Actual: 1512, Predicted: 748.9337802341831
+Actual: 1055, Predicted: 728.5107584143035
+Actual: 648, Predicted: 818.6981284333639
+Actual: 318, Predicted: 668.3245048642011
+Actual: 857, Predicted: 838.6165871557262
+Actual: 517, Predicted: 704.2094097786872
+Actual: 1310, Predicted: 1159.7210648759396
+Actual: 1538, Predicted: 1144.4978860159392
+Actual: 620, Predicted: 1140.0679122294255
+Actual: 405, Predicted: 828.4199679982307
+hello world
+@current working mac address lenovo ideapad: 89:24:92:48:23:8f
+you are now protected from DDOS attacks thanks to python3 flask limiter tool
+local IP Address: 10.169.43.94
+creating database sqllite
+training the X-
+training the Y-
+fiting the data
+Cache Expiration Model Coefficients: [0.00179814]
+Cache Expiration Model Intercept: 680.1790139501359
+Predictions on Training Data:
+Actual: 200, Predicted: 763.1235288384208
+Actual: 1574, Predicted: 1448.5943705333557
+Actual: 1860, Predicted: 1204.0617825817485
+Actual: 1315, Predicted: 710.8370313097366
+Actual: 272, Predicted: 1309.163876649133
+Actual: 641, Predicted: 1124.227740032077
+Actual: 1885, Predicted: 1327.195132642576
+Actual: 1269, Predicted: 1064.3883296281022
+Actual: 695, Predicted: 976.9011453571013
+Actual: 1354, Predicted: 1136.507062427748
+hello world
+@current working mac address lenovo ideapad: 89:24:92:48:23:8f
+you are now protected from DDOS attacks thanks to python3 flask limiter tool
+local IP Address: 10.169.43.94
+creating database sqllite
+training the X-
+training the Y-
+fiting the data
+Cache Expiration Model Coefficients: [-0.00037632]
+Cache Expiration Model Intercept: 1290.1865945582367
+Predictions on Training Data:
+Actual: 1641, Predicted: 1148.1244918944092
+Actual: 1202, Predicted: 1186.4252864219482
+Actual: 1165, Predicted: 1138.1654973962734
+Actual: 223, Predicted: 1246.19146781886
+Actual: 1476, Predicted: 1248.6612111785425
+Actual: 884, Predicted: 1114.0113693086487
+Actual: 1375, Predicted: 1264.843994394393
+Actual: 1512, Predicted: 1281.0696330223604
+Actual: 1665, Predicted: 1240.0516536096375
+Actual: 921, Predicted: 1196.4553949549286
+Welcome email sent successfully!
+No cached response found
+Fetching URL from the internet
+Response received from the internet at 2023-11-29 15:14:45.010964
+Creating the cache
+New response cached and saved well in the database
+Response sent to the client
+Welcome email sent successfully!
+Welcome email sent successfully!
