@@ -38,7 +38,7 @@ Within the project source code, find the `app.py` file.
 3. **Login instructions**:
 
     - Use the following credentials for user login:
-        - Email: at56@mail.aub.edu
+        - Email: mbz02@mail.aub.edu
         - Password: 12345
         (This email is added specifically for testing purposes.)
 	after logging in browse the on the proxy freely
